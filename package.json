@@ -2,13 +2,26 @@
   "name": "login-nodejs",
   "version": "1.0.0",
   "description": "login form using Node.js and MongoDB",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
   "author": "bella77-69",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^3.1.6"
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.1",
+    "concurrently": "^7.0.0",
+    "express": "^4.17.2",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.3.1",
+    "mongoose": "^6.1.7",
+    "nodemon": "^2.0.15",
+    "passport": "^0.5.2",
+    "passport-jwt": "^4.0.0",
+    "validator": "^13.7.0"
   }
 }
